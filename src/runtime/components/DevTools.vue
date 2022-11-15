@@ -26,7 +26,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useRuntimeConfig } from "#app";
 
 import { useDevToolsModel } from "../composables/useDevToolsModel";
 import { useModuleConfig } from "../composables/useModuleConfig";
@@ -35,7 +34,7 @@ const { moduleConfig } = useModuleConfig();
 const positionClass = ref(moduleConfig.defaultPosition);
 const isOpen = ref(moduleConfig.openByDefault);
 
-let { model: formModel } = useDevToolsModel(useRuntimeConfig().public);
+let formModel = useDevToolsModel();
 </script>
 
 <style scoped>

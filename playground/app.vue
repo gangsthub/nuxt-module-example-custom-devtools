@@ -2,9 +2,7 @@
   <DevToolsWrapper>
     <div>
       Nuxt module playground!
-      <ClientOnly>
-        <code>{{ envVar }}</code>
-      </ClientOnly>
+      <input type="text" v-model="envVar" />
     </div>
   </DevToolsWrapper>
 </template>

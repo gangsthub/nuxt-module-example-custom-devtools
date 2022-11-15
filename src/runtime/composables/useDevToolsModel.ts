@@ -1,9 +1,8 @@
 import { ref } from "vue";
-import { AnyConfig } from "../../types";
+import { useState } from "#app";
+import { useCustomRuntimeConfig } from "./useCustomRuntimeConfig";
 
-export function useDevToolsModel(config: AnyConfig) {
-  const model = ref(config || {});
-  return {
-    model,
-  };
-}
+export const useDevToolsModel = () =>
+  useState("config", () => {
+    return useCustomRuntimeConfig();
+  });

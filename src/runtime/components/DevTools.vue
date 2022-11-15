@@ -34,7 +34,7 @@ const { moduleConfig } = useModuleConfig();
 const positionClass = ref(moduleConfig.defaultPosition);
 const isOpen = ref(moduleConfig.openByDefault);
 
-let formModel = useDevToolsModel();
+let { model: formModel } = useDevToolsModel();
 </script>
 
 <style scoped>

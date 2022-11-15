@@ -1,0 +1,6 @@
+{
+  "extends": [],
+  "rules": {
+    "quotes": ["error", "double"]
+  }
+}

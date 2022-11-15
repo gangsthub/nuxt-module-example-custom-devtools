@@ -1,4 +1,4 @@
-import { defineNuxtPlugin } from "../../playground/.nuxt/imports";
+import { defineNuxtPlugin } from "#imports";
 
 import { useEnvVar } from "./composables/useEnvVar";
 

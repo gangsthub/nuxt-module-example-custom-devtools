@@ -12,7 +12,8 @@ const { moduleConfig } = useModuleConfig();
 
 <style scoped>
 .devtools-layout {
-  position: relative;
+  position: absolute;
+  inset: 0;
   min-height: 100vh;
 }
 </style>

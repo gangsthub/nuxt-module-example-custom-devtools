@@ -12,3 +12,11 @@ defineProps<{
   label: string;
 }>();
 </script>
+
+<style scoped>
+input {
+  width: 100%;
+  border-radius: 0.2em;
+  padding: 0.2em 0.3em;
+}
+</style>

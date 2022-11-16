@@ -1,5 +1,5 @@
 <template>
-  <div class="devtools-layout" :class="[moduleConfig.rootClass]">
+  <div :class="[moduleConfig.rootClass]">
     <ClientOnly>
       <DevTools>
         <slot />
@@ -13,10 +13,4 @@ import { useModuleConfig } from "../composables/useModuleConfig";
 const { moduleConfig } = useModuleConfig();
 </script>
 
-<style scoped>
-.devtools-layout {
-  position: absolute;
-  min-height: 100vh;
-  inset: 0;
-}
-</style>
+<style scoped></style>

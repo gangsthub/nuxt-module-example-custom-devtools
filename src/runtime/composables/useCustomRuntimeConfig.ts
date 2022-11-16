@@ -6,6 +6,7 @@ export function useCustomRuntimeConfig() {
     {},
     useRuntimeConfig().public
   );
+  // do not include this module config in the DevTools
   delete staticConfig.customDevtools;
 
   return staticConfig;

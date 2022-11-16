@@ -1,10 +1,8 @@
 <template>
-  <DevToolsWrapper>
-    <div>
-      Nuxt module playground!
-      <input type="text" v-model="envVar" />
-    </div>
-  </DevToolsWrapper>
+  <div>
+    {{ envVar }}
+  </div>
+  <DevToolsWrapper />
 </template>
 
 <script setup>

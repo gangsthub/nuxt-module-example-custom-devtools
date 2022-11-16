@@ -7,7 +7,6 @@ import {
 import defu from "defu";
 
 import { ModuleOptions } from "./types";
-export type { ModuleOptions };
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {

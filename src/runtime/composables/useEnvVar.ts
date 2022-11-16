@@ -2,8 +2,8 @@ import { computed } from "vue";
 
 import { useDevToolsModel } from "./useDevToolsModel";
 
-export function useEnvVar(key: string, options?: any[]) {
-  const { model: customConfig } = useDevToolsModel({ [key]: options });
+export function useEnvVar(key: string) {
+  const { model: customConfig } = useDevToolsModel();
 
   if (!key || !(key in customConfig.value)) {
     throw new Error(

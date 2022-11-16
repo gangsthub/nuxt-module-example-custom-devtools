@@ -4,6 +4,7 @@
   "description": "Nuxt module example. Custom Devtools",
   "author": "Paul Melero",
   "license": "MIT",
+  "repository": "https://github.com/gangsthub/nuxt-module-example-custom-devtools",
   "type": "module",
   "exports": {
     ".": {

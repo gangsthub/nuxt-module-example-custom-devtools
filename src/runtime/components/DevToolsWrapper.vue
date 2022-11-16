@@ -1,7 +1,10 @@
 <template>
   <div class="devtools-layout" :class="[moduleConfig.rootClass]">
-    <slot />
-    <DevTools />
+    <ClientOnly>
+      <DevTools>
+        <slot />
+      </DevTools>
+    </ClientOnly>
   </div>
 </template>
 
@@ -13,7 +16,7 @@ const { moduleConfig } = useModuleConfig();
 <style scoped>
 .devtools-layout {
   position: absolute;
-  inset: 0;
   min-height: 100vh;
+  inset: 0;
 }
 </style>
